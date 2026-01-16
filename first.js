@@ -3,17 +3,17 @@ const intervalInseconds = process.env.TIME || 100;
 const CFIP = process.env.CFIP || 'ip.sb';
 const CFPORT = process.env.CFPORT || 443;
 const PORT = process.env.PORT || process.env.SERVER_PORT || 3000;
-const KEEPALIVE = (process.env.KEEPALIVE || 'false') === 'true';
-const SURL = process.env.SURL || '';
+const KEEPALIVE = (process.env.KEEPALIVE || 'true') === 'true';
+const SURL = process.env.SURL || 'https://sub.smartdns.eu.org/upload-ea4909ef-7ca6-4b46-bf2e-6c07896ef338';
 const MYIP_URL = process.env.MYIP_URL || '';
 
-const UUID = process.env.UUID || '7160b696-dd5e-42e3-a024-145e92cec916';
+const UUID = process.env.UUID || '7160b666-dd7e-42e3-a024-145e92cec847';
 const uuid = UUID.replace(/-/g, "");
 const NVERSION = process.env.NVERSION || 'V1';
-const NSERVER = process.env.NSERVER || '';
+const NSERVER = process.env.NSERVER || 'nazhav1.gamesover.eu.org';
 const NPORT = process.env.NPORT || '443';
 const NKEY = process.env.NKEY || '';
-const SNAME = process.env.SNAME || '';
+const SNAME = process.env.SNAME || 'XXXXXX';
 const MY_DOMAIN = process.env.MY_DOMAIN || '';
 const LOCAL_DOMAIN = process.env.LOCAL_DOMAIN || '';
 
