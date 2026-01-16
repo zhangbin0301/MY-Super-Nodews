@@ -7,6 +7,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
     name: "Build and push image"
+    permissions:
+      contents: read
+      packages: write   # 🔥 必须要有这一行，才能推 GHCR
+      
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
